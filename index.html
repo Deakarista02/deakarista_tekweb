@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operasi Aritmatika</title>
+    <h3>Nama: A. A. Dea Karista Dewi</h3>
+    <h4>NIM: 2215101039</h4>
+    <h5>Kelas: A</h5>
+</head>
+<body>
+    <div class="container">
+        <h1>Operasi Aritmatika</h1>
+        <label for="operation">Pilih operasi:</label>
+        <select id="operation">
+            <option value="fibonacci">Deret Fibonacci</option>
+            <option value="volumeKubus">Volume Kubus</option>
+            <option value="volumeBalok">Volume Balok</option>
+            <option value="volumeBola">Volume Bola</option>
+            <option value="volumeTabung">Volume Tabung</option>
+
+        </select>
+        <div id="fibonacciFields" class="input-fields">
+            <label for="fibonacciInput">Hitung Fibonacci ke-n:</label>
+            <input type="number" id="fibonacciInput">
+        </div>
+        <div id="volumeKubusFields" class="input-fields">
+            <label for="kubussisi1">Sisi 1:</label>
+            <input type="number" id="kubussisi1">
+            <label for="kubussisi2">Sisi 2:</label>
+            <input type="number" id="kubussisi2">
+            <label for="kubussisi3">Sisi 3:</label>
+            <input type="number" id="kubussisi3">
+        </div>
+        <div id="volumeBalokFields" class="input-fields">
+            <label for="balokPanjang">Panjang:</label>
+            <input type="number" id="balokPanjang">
+            <label for="balokLebar">Lebar:</label>
+            <input type="number" id="balokLebar">
+            <label for="balokTinggi">Tinggi:</label>
+            <input type="number" id="balokTinggi">
+        </div> 
+        <div id="volumeBolaFields" class="input-fields">
+            <label for="bolaJariJari">Jari-Jari Bola:</label>
+            <input type="number" id="bolaJariJari">
+        </div>
+        <div id="volumeTabungFields" class="input-fields">
+            <label for="tabungJari">Jari-Jari Tabung:</label>
+            <input type="number" id="tabungJari">
+            <label for="tabungTinggi">Tinggi Tabung:</label>
+            <input type="number" id="tabungTinggi">
+        </div>
+        <button onclick="calculate()">Hitung</button>
+        <p id="result">Hasil:</p>
+    </div>       
+
+    <script src="script.js"></script>
+</body>
+</html>
